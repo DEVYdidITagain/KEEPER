@@ -1,0 +1,34 @@
+{
+  "_comment": "Paste your mint (CA) after launch. declared_sol is what you publicly promised to buy; declared_pct stays 0 because you never promised a percentage. The lock date is what actually gets enforced.",
+  "ticker": "$KEEPER",
+  "mint": "",
+  "dev_wallet": "B1bsL7JW52CicRwZdkLvsd7G8fvZtB18QjcpzNPZDUSY",
+  "lp_mint": null,
+  "declared_pct": 0,
+  "lock_until": "2026-10-15",
+  "report_path": "public/audit.html",
+  "always_log": true,
+  "card_path": "public/card.html",
+  "fee_wallet": "",
+  "cause": "a church in Hampton, SC",
+  "ops_wallets": [
+    "FCHZSWkhqVUuFughPwataoxGsKr19kW8vuzssNDjapAG",
+    "7Yii2wWCcWVtWGwNhQidjMPxMbHs9K7452w2Kp7nB8bZ"
+  ],
+  "site_path": "public/index.html",
+  "tagline": "forty years on this rock. the light goes on at dusk.",
+  "pumpfun_url": "",
+  "promises": [
+    "<b>2 SOL</b>, bought at launch on the same curve as everyone else, from <code>B1bsL7JW52CicRwZdkLvsd7G8fvZtB18QjcpzNPZDUSY</code>. Nothing sold before <b>15 October</b>, then a tenth a day at most, posted each time.",
+    "<b>Two operations wallets</b>, 0.5 SOL each &mdash; <code>FCHZSWkhqVUuFughPwataoxGsKr19kW8vuzssNDjapAG</code> and <code>7Yii2wWCcWVtWGwNhQidjMPxMbHs9K7452w2Kp7nB8bZ</code>. This is the marketing budget. It gets sold to pay for the listing and boosts, and it was disclosed two days before launch.",
+    "<b>Three wallets, that's all of them.</b> If a fourth turns up, it isn't me."
+  ],
+  "links": {
+    "Dev on X": "",
+    "The keeper on X": "",
+    "TikTok": "",
+    "Instagram": "",
+    "Full audit": "audit.html"
+  },
+  "declared_sol": 2
+}

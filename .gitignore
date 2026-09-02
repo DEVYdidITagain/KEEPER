@@ -1,0 +1,12 @@
+# never commit secrets or local state
+.env
+*.key
+*.pem
+
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# local test artifacts
+test_log.jsonl
+public/test-*.html
