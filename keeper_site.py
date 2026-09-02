@@ -142,7 +142,8 @@ def render_site(result: dict | None = None, ticker: str = "$TOKEN",
                 donations: dict | None = None, cause: str = "",
                 links: dict | None = None, promises: list[str] | None = None,
                 tagline: str = "forty years on this rock. the light goes on at dusk.",
-                pumpfun_url: str = "") -> str:
+                pumpfun_url: str = "", charity_url: str = "",
+                fees_donated: str = "") -> str:
     p = PALETTE
     links = links or {}
     live = bool(result and result.get("mint"))
@@ -186,9 +187,22 @@ def render_site(result: dict | None = None, ticker: str = "$TOKEN",
             f'show the money was banked at the other end &mdash; that rests on the '
             f'recipient, not on anything provable here.</p></section>')
     elif cause:
+        # A self-reported figure, clearly labelled as such, plus a third-party
+        # link. The charity's own page shows its all-time total from every
+        # donor - saying so out loud is what stops this reading as if that
+        # number were yours.
+        raised = (f'<div class="tiles" style="grid-template-columns:1fr">'
+                  f'<div class="tile"><div class="n">{esc(str(fees_donated))}</div>'
+                  f'<div class="l">SOL in creator fees routed so far</div></div></div>'
+                  if fees_donated else "")
+        proof = (f'<p class="lead" style="margin-top:12px">Verify the recipient: '
+                 f'<a href="{esc(charity_url)}">{esc(cause)} on donate.gg</a>. '
+                 f'The total on that page is the church&rsquo;s, from every donor it has '
+                 f'ever had &mdash; not mine, and most of it predates this coin.</p>'
+                 if charity_url else "")
         fees = (f'<section><h2>Creator fees</h2><p class="lead">100% of creator fees go to '
                 f'{esc(cause)}, set through pump.fun&rsquo;s charity function. They are not '
-                f'routed through me and I cannot redirect them.</p></section>')
+                f'routed through me and I cannot redirect them.</p>{raised}{proof}</section>')
     else:
         fees = ""
 

@@ -696,7 +696,9 @@ def main(argv=None) -> int:
                                  cfg_all.get("promises") or [],
                                  cfg_all.get("tagline") or
                                  "forty years on this rock. the light goes on at dusk.",
-                                 cfg_all.get("pumpfun_url", "")))
+                                 cfg_all.get("pumpfun_url", ""),
+                                 cfg_all.get("charity_url", ""),
+                                 cfg_all.get("fees_donated", "")))
         print(f"  site      {args.site}")
         print()
 

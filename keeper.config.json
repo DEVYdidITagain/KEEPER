@@ -1,5 +1,5 @@
 {
-  "_comment": "Paste your mint (CA) after launch. declared_sol is what you publicly promised to buy. Pages are written to docs/ because that is the folder GitHub Pages can serve from.",
+  "_comment": "Paste your mint (CA) after launch. fees_donated is what YOUR coin has routed to charity - take it from pump.fun's creator fee dashboard and update it as it grows. Never quote the charity's own page total as yours.",
   "ticker": "$KEEPER",
   "mint": "",
   "dev_wallet": "B1bsL7JW52CicRwZdkLvsd7G8fvZtB18QjcpzNPZDUSY",
@@ -31,5 +31,7 @@
     "Source code": "https://github.com/DEVYdidITagain/KEEPER",
     "Full audit": "audit.html"
   },
-  "declared_sol": 2
+  "declared_sol": 2,
+  "charity_url": "https://donate.gg/charity/lighthouse-church",
+  "fees_donated": ""
 }
