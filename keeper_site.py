@@ -192,8 +192,13 @@ def render_site(result: dict | None = None, ticker: str = "$TOKEN",
     else:
         fees = ""
 
-    link_html = "".join(f'<a href="{esc(v)}">{esc(k)}</a>'
-                        for k, v in links.items() if v)
+    # audit.html only exists once a real audit has been run, so linking it
+    # before launch just hands a visitor a 404 on the one page that is supposed
+    # to prove you are careful
+    link_html = "".join(
+        f'<a href="{esc(v)}">{esc(k)}</a>'
+        for k, v in links.items()
+        if v and not (v.endswith("audit.html") and not live))
 
     return f'''<!doctype html>
 <html lang="en"><head>

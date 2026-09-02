@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>$KEEPER — Audit Card</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; overflow: hidden; }
+  body { background: #05090B; display: flex; align-items: center;
+         justify-content: center;
+         font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+
+  .card {
+    width: 1200px; height: 675px; flex: 0 0 auto;
+    background: #0E1519; color: #E4EBED;
+    border: 1px solid #24333A;
+    padding: 46px 54px; display: flex; flex-direction: column;
+    transform-origin: center;
+  }
+
+  .head { display: flex; align-items: flex-start; gap: 18px; }
+  .lamp { width: 15px; height: 15px; border-radius: 50%; background: #E8A33D;
+          box-shadow: 0 0 26px 5px rgba(232,163,61,.4); margin-top: 12px; flex: 0 0 auto; }
+  h1 { font-size: 38px; letter-spacing: -.02em; line-height: 1.1; }
+  .promise { color: #9FB1B8; font-size: 16px; margin-top: 7px; }
+
+  .badge { margin-left: auto; text-align: right; }
+  .badge .v { color: #5FBF8F; font-size: 26px; font-weight: 700;
+              letter-spacing: .05em; line-height: 1.1; }
+  .badge .t { color: #68797F; font-size: 13px; margin-top: 6px;
+              font-family: ui-monospace, monospace; }
+
+  .rows { margin-top: 30px; border-top: 1px solid #24333A; }
+  .row { display: flex; align-items: baseline; gap: 20px;
+         padding: 19px 2px; border-bottom: 1px solid #24333A; }
+  .st { width: 72px; flex: 0 0 auto; font-family: ui-monospace, monospace;
+        font-size: 13px; letter-spacing: .07em; }
+  .nm { width: 168px; flex: 0 0 auto; font-size: 16px; }
+  .dt { color: #9FB1B8; font-size: 15px; }
+
+  .foot { margin-top: auto; padding-top: 26px;
+          border-top: 1px solid #24333A;
+          display: flex; align-items: flex-end; gap: 30px; }
+  .addr { font-family: ui-monospace, monospace; font-size: 12.5px;
+          color: #9FB1B8; line-height: 1.85; }
+  .addr b { color: #68797F; font-weight: 400; display: inline-block; width: 82px; }
+  .rec { margin-left: auto; text-align: right; font-size: 12.5px;
+         color: #68797F; line-height: 1.85; white-space: nowrap; }
+  .hash { font-family: ui-monospace, monospace; color: #6BB3C9; }
+
+  /* the card is a fixed-size picture; scale it to whatever window it opens in
+     so that a plain screenshot of the window captures the whole thing */
+</style></head>
+<body>
+  <div class="card">
+    <div class="head">
+      <div class="lamp"></div>
+      <div>
+        <h1>$KEEPER &mdash; public audit</h1>
+        <div class="promise">Declared before launch: holds none &nbsp;·&nbsp; no sales before 2026-10-15</div>
+      </div>
+      <div class="badge">
+        <div class="v">ALL CHECKS PASS</div>
+        <div class="t">02 Sep 2026 02:28 UTC</div>
+      </div>
+    </div>
+
+    <div class="rows">
+    <div class="row">
+      <div class="st" style="color:#5FBF8F">PASS</div>
+      <div class="nm">mint authority</div>
+      <div class="dt">revoked</div>
+    </div>
+    <div class="row">
+      <div class="st" style="color:#5FBF8F">PASS</div>
+      <div class="nm">freeze authority</div>
+      <div class="dt">revoked</div>
+    </div>
+    <div class="row">
+      <div class="st" style="color:#68797F">INFO</div>
+      <div class="nm">supply</div>
+      <div class="dt">999,999,469 (6 decimals)</div>
+    </div>
+    <div class="row">
+      <div class="st" style="color:#68797F">INFO</div>
+      <div class="nm">dev allocation</div>
+      <div class="dt">0.00% of supply from the 2 SOL bought at launch - no cap was promised, the ...</div>
+    </div>
+    <div class="row">
+      <div class="st" style="color:#5FBF8F">PASS</div>
+      <div class="nm">lock</div>
+      <div class="dt">holding intact since first check (0.00% -&gt; 0.00%), locked until 2026-10-15</div>
+    </div>
+    <div class="row">
+      <div class="st" style="color:#68797F">INFO</div>
+      <div class="nm">ops wallet 1</div>
+      <div class="dt">FCHZSWkhqVUuFughPwataoxGsKr19kW8vuzssNDjapAG - holds 0 (spent or not yet bo...</div>
+    </div>
+    <div class="row">
+      <div class="st" style="color:#68797F">INFO</div>
+      <div class="nm">ops wallet 2</div>
+      <div class="dt">7Yii2wWCcWVtWGwNhQidjMPxMbHs9K7452w2Kp7nB8bZ - holds 0 (spent or not yet bo...</div>
+    </div>
+    <div class="row">
+      <div class="st" style="color:#68797F">INFO</div>
+      <div class="nm">top-10 holders</div>
+      <div class="dt">not read (rate limited (429)) - informational only, does not affect the ver...</div>
+    </div>
+    </div>
+
+    <div class="foot">
+      <div class="addr">
+        <div><b>token</b>J1dXZiZPZY9rCwmgaoSoWHJyXgSrbo9RThdEQ9D1pump</div>
+        <div><b>dev wallet</b>B1bsL7JW52CicRwZdkLvsd7G8fvZtB18QjcpzNPZDUSY</div>
+      </div>
+      <div class="rec">
+        read live from the Solana chain<br>
+        audit log: 2 entries, chain intact &nbsp;<span class="hash">77c5b5cb47d48623f58639ee…</span>
+      </div>
+    </div>
+  </div>
+
+<script>
+  (function () {
+    var card = document.querySelector(".card");
+    function fit() {
+      var s = Math.min(window.innerWidth / 1232, window.innerHeight / 707);
+      card.style.transform = "scale(" + s + ")";
+    }
+    window.addEventListener("resize", fit);
+    fit();
+  })();
+</script>
+</body></html>
