@@ -29,9 +29,10 @@
     "Instagram": "https://www.instagram.com/keepsthelight",
     "Email": "mailto:devydiditagain@gmail.com",
     "Source code": "https://github.com/DEVYdidITagain/KEEPER",
-    "Full audit": "audit.html"
+    "Full audit": "audit.html",
+    "Charity": "https://www.donate.gg/charities/lighthouse-church"
   },
   "declared_sol": 2,
-  "charity_url": "https://donate.gg/charity/lighthouse-church",
+  "charity_url": "https://www.donate.gg/charities/lighthouse-church",
   "fees_donated": ""
 }
