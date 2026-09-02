@@ -24,10 +24,12 @@
     "<b>Three wallets, that's all of them.</b> If a fourth turns up, it isn't me."
   ],
   "links": {
-    "Dev on X": "",
-    "The keeper on X": "",
-    "TikTok": "",
-    "Instagram": "",
+    "The keeper on X": "https://x.com/keepsthelight",
+    "Dev on X": "https://x.com/DEVYdidITagain",
+    "TikTok": "https://www.tiktok.com/@keepsthelight",
+    "Instagram": "https://www.instagram.com/keeper",
+    "Email": "mailto:devydiditagain@gmail.com",
+    "Source code": "https://github.com/DEVYdidITagain/KEEPER",
     "Full audit": "audit.html"
   },
   "declared_sol": 2
