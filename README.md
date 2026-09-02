@@ -36,7 +36,7 @@ With the full set of commitments:
 python keeper_audit.py <MINT> \
   --dev-wallet <WALLET> --declared-sol 2 --lock-until 2026-10-15 \
   --ops-wallet <OPS1> --ops-wallet <OPS2> \
-  --receipts --report public/audit.html --card public/card.html --log
+  --receipts --report docs/audit.html --card docs/card.html --log
 ```
 
 Or put it all in `keeper.config.json` and run `python keeper_audit.py` with no
@@ -46,7 +46,7 @@ arguments. Windows users can double-click `check.bat`.
 |---|---|
 | `check.bat` | full audit, writes the report, card and site, opens it |
 | `verify.bat` | checks the audit log has not been tampered with |
-| `serve.bat` | serves `public/` at http://localhost:8000 |
+| `serve.bat` | serves `docs/` at http://localhost:8000 |
 | `test.bat` | dry run against a live token, writes to separate test files |
 
 ## How the promises are checked

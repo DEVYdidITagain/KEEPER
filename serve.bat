@@ -2,7 +2,7 @@
 REM Serves the audit page as a real website on your machine.
 REM Only the 'public' folder is exposed - your config and log stay private.
 cd /d "%~dp0"
-if not exist public\audit.html (
+if not exist docs\audit.html (
   echo No report yet. Run check.bat first.
   pause
   exit /b
@@ -16,4 +16,4 @@ echo.
 echo   Press Ctrl+C to stop the server.
 echo.
 start "" http://localhost:8000/audit.html
-python -m http.server 8000 --directory public
+python -m http.server 8000 --directory docs

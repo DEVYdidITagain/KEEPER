@@ -1,21 +1,21 @@
 {
-  "_comment": "Paste your mint (CA) after launch. declared_sol is what you publicly promised to buy; declared_pct stays 0 because you never promised a percentage. The lock date is what actually gets enforced.",
+  "_comment": "Paste your mint (CA) after launch. declared_sol is what you publicly promised to buy. Pages are written to docs/ because that is the folder GitHub Pages can serve from.",
   "ticker": "$KEEPER",
   "mint": "",
   "dev_wallet": "B1bsL7JW52CicRwZdkLvsd7G8fvZtB18QjcpzNPZDUSY",
   "lp_mint": null,
   "declared_pct": 0,
   "lock_until": "2026-10-15",
-  "report_path": "public/audit.html",
+  "report_path": "docs/audit.html",
   "always_log": true,
-  "card_path": "public/card.html",
+  "card_path": "docs/card.html",
   "fee_wallet": "",
   "cause": "a church in Hampton, SC",
   "ops_wallets": [
     "FCHZSWkhqVUuFughPwataoxGsKr19kW8vuzssNDjapAG",
     "7Yii2wWCcWVtWGwNhQidjMPxMbHs9K7452w2Kp7nB8bZ"
   ],
-  "site_path": "public/index.html",
+  "site_path": "docs/index.html",
   "tagline": "forty years on this rock. the light goes on at dusk.",
   "pumpfun_url": "",
   "promises": [

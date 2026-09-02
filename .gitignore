@@ -9,4 +9,4 @@ __pycache__/
 
 # local test artifacts
 test_log.jsonl
-public/test-*.html
+docs/test-*.html
