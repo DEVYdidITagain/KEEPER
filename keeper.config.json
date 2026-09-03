@@ -5,7 +5,7 @@
   "dev_wallet": "B1bsL7JW52CicRwZdkLvsd7G8fvZtB18QjcpzNPZDUSY",
   "lp_mint": null,
   "declared_pct": 0,
-  "lock_until": "2026-10-15",
+  "lock_until": "2026-09-18",
   "report_path": "docs/audit.html",
   "always_log": true,
   "card_path": "docs/card.html",
@@ -18,7 +18,7 @@
   "tagline": "forty years on this rock. the light goes on at dusk.",
   "pumpfun_url": "",
   "promises": [
-    "<b>2 SOL</b>, bought at launch on the same curve as everyone else, from <code>B1bsL7JW52CicRwZdkLvsd7G8fvZtB18QjcpzNPZDUSY</code>. Nothing sold from it before <b>15 October</b>.",
+    "<b>2 SOL</b>, bought at launch on the same curve as everyone else, from <code>B1bsL7JW52CicRwZdkLvsd7G8fvZtB18QjcpzNPZDUSY</code>. Nothing sold from it for the first <b>72 hours</b> &mdash; nothing before <b>18 September</b>. That is a floor, not a plan: it is a promise not to sell before then, not a promise to sell after.",
     "<b>One operations wallet</b>, 1 SOL &mdash; <code>FCHZSWkhqVUuFughPwataoxGsKr19kW8vuzssNDjapAG</code>. This is the marketing budget. It gets sold in the first days to cover the DexScreener listing and boosts &mdash; that money is a cost, not profit. Disclosed two days before launch.",
     "<b>Two wallets, that's all of them.</b> If a third turns up, it isn't me."
   ],
