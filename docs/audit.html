@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$KEEPER — Audit</title>
+<meta name="description" content="$KEEPER — the on-chain audit, and what it checks.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0E1519; color: #E4EBED;
+         font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+         line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 22px 90px; }
+
+  h1 { font-size: clamp(1.6rem, 6vw, 2.2rem); letter-spacing: -.02em; line-height: 1.15; }
+  .tag { color: #9FB1B8; margin-top: 10px; font-size: .9375rem; }
+
+  .status { display: inline-block; border: 1px solid #68797F; color: #9FB1B8;
+            border-radius: 3px; padding: 8px 14px; font-size: .8125rem;
+            letter-spacing: .04em; margin: 22px 0 8px; }
+
+  section { margin-top: 40px; }
+  h2 { font-size: .6875rem; text-transform: uppercase; letter-spacing: .16em;
+       color: #68797F; margin-bottom: 14px; font-weight: 600; }
+  .lead { color: #9FB1B8; font-size: .9375rem; max-width: 62ch; }
+  .lead + .lead { margin-top: 12px; }
+
+  .card { background: #151F24; border: 1px solid #24333A;
+          border-left: 2px solid #E8A33D; border-radius: 3px;
+          padding: 15px 17px; margin-bottom: 9px; }
+  .card p { font-size: .9375rem; color: #9FB1B8; }
+  .card b { color: #E4EBED; }
+
+  .links { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 8px; }
+  .links a { border: 1px solid #24333A; color: #9FB1B8; text-decoration: none;
+             padding: 9px 15px; border-radius: 3px; font-size: .875rem; }
+  .links a:hover { color: #E8A33D; border-color: #E8A33D; }
+
+  footer { margin-top: 52px; padding-top: 20px; border-top: 1px solid #24333A;
+           font-size: .8125rem; color: #68797F; max-width: 62ch; }
+</style></head>
+<body>
+
+<div class="wrap">
+  <h1>$KEEPER &mdash; the audit</h1>
+  <p class="tag">what gets checked, and why you shouldn&rsquo;t take my word for it.</p>
+
+  <span class="status">The audit has not been run yet</span>
+  <p class="lead">This page fills in with live chain data the first time the audit runs against
+  the contract. Until then it is empty on purpose &mdash; an audit page showing results before
+  an audit happened would be worth nothing.</p>
+
+  <section>
+    <h2>What it checks</h2>
+    <div class="card"><p><b>Mint authority.</b> Whether anyone can still print more supply. It should be revoked.</p></div>
+    <div class="card"><p><b>Freeze authority.</b> Whether anyone can freeze a holder&rsquo;s wallet. It should be revoked.</p></div>
+    <div class="card"><p><b>Liquidity.</b> Whether the LP is burned.</p></div>
+    <div class="card"><p><b>The dev holding, against what was promised.</b> Not a generic check &mdash; it reads the specific promises published before launch and compares them to the chain.</p></div>
+    <div class="card"><p><b>The lock.</b> Current holding measured against the earliest recorded run, which is the only way a snapshot tool can answer &ldquo;did they sell during the window they promised not to.&rdquo;</p></div>
+  </section>
+
+  <section>
+    <h2>Why the record can&rsquo;t be quietly edited</h2>
+    <p class="lead">Every run is appended to a log where each entry carries the SHA-256 hash of the
+    entry before it. Editing or deleting any earlier record breaks every hash that follows, and the
+    verifier reports exactly where it broke.</p>
+    <p class="lead">That proves the log hasn&rsquo;t been rewritten since it was written. It does not
+    prove <i>when</i> an entry was written &mdash; for that, a chain hash gets posted publicly, and
+    everything before it is anchored from that moment.</p>
+  </section>
+
+  <section>
+    <h2>Read the code instead of trusting the page</h2>
+    <p class="lead">The tool that produces this page is public. It has no Solana SDK dependency &mdash;
+    the mint layout is parsed directly and base58 is implemented in the repo &mdash; so there is no
+    third-party library you have to trust before you trust the output.</p>
+    <div class="links">
+      <a href="https://github.com/DEVYdidITagain/KEEPER">Source code</a>
+      <a href="index.html">Back to $KEEPER</a>
+    </div>
+  </section>
+
+  <footer>
+    Nothing here is financial advice, and none of it is a guarantee that a token is safe.
+    No audit can tell you that. It is a record of what was promised and what the chain says.
+    Check it yourself.
+  </footer>
+</div>
+
+</body></html>
