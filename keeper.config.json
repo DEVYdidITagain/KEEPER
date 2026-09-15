@@ -1,16 +1,15 @@
 {
-  "_comment": "Paste your mint (CA) after launch. fees_donated is what YOUR coin has routed to charity - take it from pump.fun's creator fee dashboard and update it as it grows. Never quote the charity's own page total as yours.",
+  "_comment": "Paste your mint (CA) after launch. declared_sol is what you publicly promised to buy; the lock date is what actually gets enforced.",
   "ticker": "$KEEPER",
   "mint": "",
   "dev_wallet": "B1bsL7JW52CicRwZdkLvsd7G8fvZtB18QjcpzNPZDUSY",
   "lp_mint": null,
   "declared_pct": 0,
-  "lock_until": "2026-09-18",
+  "lock_until": "2026-09-16",
   "report_path": "docs/audit.html",
   "always_log": true,
   "card_path": "docs/card.html",
   "fee_wallet": "",
-
   "ops_wallets": [
     "FCHZSWkhqVUuFughPwataoxGsKr19kW8vuzssNDjapAG"
   ],
@@ -29,9 +28,9 @@
     "Instagram": "https://www.instagram.com/keepsthelight",
     "Email": "mailto:devydiditagain@gmail.com",
     "Source code": "https://github.com/DEVYdidITagain/KEEPER",
-    "Full audit": "audit.html",
-    
+    "Full audit": "audit.html"
   },
-  "declared_sol": 2,
+  "declared_sol": 0.5
+}
 
 }
